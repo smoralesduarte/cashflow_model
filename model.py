@@ -83,7 +83,7 @@ class BankAccount:
 
 # Model class (model of the company's financial situation)
 class Model:
-    # params fixed_expenses: list of (expense, currency) (fixed expenses are paid every month in any currency), initial_credits: list of Credit (credits that the company has to pay in COP), initial_loans: list of Loan (loans that the company has to pay in any currency), initial_balance: float (COP)
+    # params fixed_expenses: list of (expense, currency) (fixed expenses are paid every month in any currency), initial_credits: list of Credit (credits that the company has to pay in COP), initial_loans: list of Loan (loans that the company has to pay in any currency), initial_balance: float (COP), bank_account_duration: int (months)
     def __init__(self, initial_fixed_expenses=[], initial_credits=[], initial_loans=[], initial_balance=0.0, bank_account_duration=12):
         self.fixed_expenses = initial_fixed_expenses.copy()
         self.credits = initial_credits.copy()
