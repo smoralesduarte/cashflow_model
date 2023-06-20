@@ -152,7 +152,7 @@ class Model:
         self.EUR_income += total
 
     # Calculate the income of the model at the current time
-    def calculate_income(self, EUR_exchange_rate=float, USD_exchange_rate=float, bank_interest=float):
+    def calculate_income(self, USD_exchange_rate=float, EUR_exchange_rate=float, bank_interest=float):
         self.calculate_COP_income(bank_interest)
         self.calculate_USD_income()
         self.calculate_EUR_income()
@@ -244,15 +244,15 @@ class Model:
         self.EUR_expenses = 0.0
 
     # Increase the time of the model by one month and update the income, expenses and flow, adds bank income to the income and bank expenses to the expenses
-    def simulate_month(self, EUR_exchange_rate=float, USD_exchange_rate=float):
+    def simulate_month(self, USD_exchange_rate=float, EUR_exchange_rate=float):
         self.time += 1
         # Reset all expenses and income of the model to 0
         self.reset()
         # Calculate bank account interest
         bank_interest = self.bank_account.simulate_month()
         # Calculate the income and expenses of the model
-        self.calculate_income(EUR_exchange_rate, USD_exchange_rate, bank_interest)
-        self.calculate_expenses(EUR_exchange_rate, USD_exchange_rate, bank_interest)
+        self.calculate_income(USD_exchange_rate, EUR_exchange_rate, bank_interest)
+        self.calculate_expenses(USD_exchange_rate, EUR_exchange_rate, bank_interest)
         # Update the bank account
         self.update_bank_account(bank_interest)
 
