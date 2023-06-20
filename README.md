@@ -21,7 +21,7 @@ The `Loan` class represents a loan that is given to the company in any currency.
 
 ### BankAccount
 
-The `BankAccount` class represents the company's bank account. It keeps track of the balance, time, and provides methods to add money, take money, add interest, and simulate the passing of time. Savings have a 10% annual interest rate, while loans have a 15% annual interest rate.
+The `BankAccount` class represents the company's bank account. It keeps track of the balance, time, and provides methods to add money, take money, add interest, and simulate the passing of time. In the provided example, savings have a 10% annual interest rate, while loans have a 15% annual interest rate.
 
 ### Model
 
