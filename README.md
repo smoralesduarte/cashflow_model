@@ -6,6 +6,7 @@ This project contains a set of classes and Jupyter Notebook examples that model 
 
 - [Classes](#classes)
 - [Jupyter Notebook Usage](#jupyter-notebook-usage)
+- [CrowdLoan](#CrowdLoan)
 
 ## Classes
 
