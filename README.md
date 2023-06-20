@@ -1,6 +1,6 @@
 # Company Financial Modeling and Analysis
 
-This project contains a set of classes and Jupyter Notebook examples that model the financial situation of a company. It includes classes for handling credits, loans, bank accounts, and a model class that combines these components to simulate the company's financial status. Additionally, the Jupyter Notebook provides examples of how to use the classes for modeling, risk analysis, and foreign exchange rate simulation and analysis.
+This small project contains a set of classes and Jupyter Notebook examples that model the financial situation of a company. It includes classes for handling credits, loans, bank accounts, and a model class that combines these components to simulate the company's financial status. Additionally, the Jupyter Notebook provides examples of how to use the classes for modeling, risk analysis, and foreign exchange rate simulation and analysis.
 
 ## Table of Contents
 
